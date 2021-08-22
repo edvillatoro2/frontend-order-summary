@@ -29,7 +29,7 @@ body {
     background-size: contain;
     background-color: $base-color;
     position: relative;
-    @media (max-width: 425px) {
+    @media (max-width: 600px) {
         background-image: url('./images/pattern-background-mobile.svg');
     }
 }
