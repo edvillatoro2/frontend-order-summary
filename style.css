@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+.container {
+  padding: 50px;
+}
+
+@media (min-width: 375px) {
+  .container {
+    padding: 25px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  height: 100vh;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e0e8ff;
+  position: relative;
+}
+
+@media (max-width: 425px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+  }
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card .card-hero img {
+  width: 100%;
+}
+
+.card .card-info .title {
+  color: #1f2f56;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.card .card-info .description {
+  font-size: 16px;
+  text-align: center;
+  color: #7280a7;
+  margin-bottom: 25px;
+}
+
+.card .card-info .payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5f7ff;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  padding: 25px;
+}
+
+.card .card-info .payment .payment-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-info .payment .payment-left h5 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2f56;
+}
+
+.card .card-info .payment .payment-left p {
+  font-size: 16px;
+  color: #7280a7;
+}
+
+.card .card-info .payment .payment-left .payment-icon {
+  margin-right: 25px;
+}
+
+.card .card-info .payment a {
+  font-weight: 900;
+  color: #3829e0;
+  -webkit-transition: opacity .4s ease-in;
+  transition: opacity .4s ease-in;
+}
+
+.card .card-info .payment a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.card .card-info .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .card-info .buttons .proceed-btn {
+  margin-bottom: 25px;
+  color: white;
+  background: #3829e0;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 10px 10px #7280a7;
+          box-shadow: 0 10px 10px #7280a7;
+  -webkit-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+}
+
+.card .card-info .buttons .proceed-btn:hover {
+  opacity: 0.8;
+}
+
+.card .card-info .buttons .cancel-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #7280a7;
+  -webkit-transition: color .4s ease-in-out;
+  transition: color .4s ease-in-out;
+}
+
+.card .card-info .buttons .cancel-btn:hover {
+  color: #1f2f56;
+}
+
+@media (min-width: 375px) {
+  .card {
+    width: calc(100% - 35px);
+  }
+  .card .card-info .title {
+    font-size: 22px;
+  }
+  .card .card-info .payment {
+    padding: 15px;
+  }
+  .card .card-info .payment .payment-left .payment-icon {
+    margin-right: 15px;
+  }
+  .card .card-info .payment .payment-left h5 {
+    font-size: 16px;
+  }
+  .card .card-info .payment .payment-left p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
